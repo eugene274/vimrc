@@ -39,7 +39,7 @@ set foldlevel=2
 " tabs
 " nmap - normal mode
 nmap <tab> :tabNext<CR>
-imap <tab> <Esc>:tabNext<CR>
+" imap <tab> <Esc>:tabNext<CR>
 
 nmap <C-t> :tabnew 
 imap <C-t> <Esc>:tabnew 
