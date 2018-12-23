@@ -36,6 +36,19 @@ set foldlevel=2
 " Key maps
 "
 
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Move a line of text using ALT+[jk]
+nmap <A-j> mz:m+<cr>`z
+nmap <A-k> mz:m-2<cr>`z
+vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+
 " tabs
 " nmap - normal mode
 nmap <tab> :tabNext<CR>
