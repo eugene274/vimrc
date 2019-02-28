@@ -31,6 +31,9 @@ set foldmethod=syntax
 set foldcolumn=3
 set foldlevel=2
 
+" swap
+set noswapfile
+
 
 "
 " Key maps
@@ -43,10 +46,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Move a line of text using ALT+[jk]
-nmap <A-j> mz:m+<cr>`z
-nmap <A-k> mz:m-2<cr>`z
-vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 
 " tabs
